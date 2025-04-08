@@ -14,10 +14,10 @@
     "name": {
       "type": "string"
     },
-    "number": {
-      "type": "integer"
-    },
     "campaign": {
+      "type": "string"
+    },
+    "number": {
       "type": "string"
     }
   }
