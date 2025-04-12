@@ -456,12 +456,13 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
 export interface ApiTicketTicket extends Struct.CollectionTypeSchema {
   collectionName: 'tickets';
   info: {
+    description: '';
     displayName: 'Ticket';
     pluralName: 'tickets';
     singularName: 'ticket';
   };
   options: {
-    draftAndPublish: true;
+    draftAndPublish: false;
   };
   attributes: {
     createdAt: Schema.Attribute.DateTime;
