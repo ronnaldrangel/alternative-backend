@@ -24,7 +24,8 @@
       "type": "json"
     },
     "redeem": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     }
   }
 }

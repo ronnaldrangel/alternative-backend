@@ -478,7 +478,7 @@ export interface ApiTicketTicket extends Struct.CollectionTypeSchema {
     name: Schema.Attribute.String;
     prize: Schema.Attribute.JSON;
     publishedAt: Schema.Attribute.DateTime;
-    redeem: Schema.Attribute.Boolean;
+    redeem: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<false>;
     type: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
