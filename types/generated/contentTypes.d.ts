@@ -441,12 +441,16 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
           localized: true;
         };
       }>;
+    regularPriceBR: Schema.Attribute.Decimal;
+    regularPriceMX: Schema.Attribute.Decimal;
     salePrice: Schema.Attribute.Decimal &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
         };
       }>;
+    salePriceBR: Schema.Attribute.Decimal;
+    salePriceMX: Schema.Attribute.Decimal;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

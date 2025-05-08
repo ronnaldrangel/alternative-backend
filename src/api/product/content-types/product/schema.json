@@ -55,6 +55,18 @@
           "localized": true
         }
       }
+    },
+    "salePriceMX": {
+      "type": "decimal"
+    },
+    "regularPriceMX": {
+      "type": "decimal"
+    },
+    "salePriceBR": {
+      "type": "decimal"
+    },
+    "regularPriceBR": {
+      "type": "decimal"
     }
   }
 }
